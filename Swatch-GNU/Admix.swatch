@@ -1,0 +1,30 @@
+corei7 shoot signal(argv == jitter)
+hutdev return continue?
+corei7 accept constant, signal.
+
+corei7 connect socket, balance
+hutdev return connect -> balance.
+
+hutdev shoot data(STDIN)
+corei7 return continue? 
+corei7 return defined __YES__ = !!!
+corei7 shoot data(STDOUT)
+hutdev defined !!! = __YES__ -> confirm !!!
+
+hutdev continue connect balance.
+
+corei7 defined func (to use) shoot.
+
+hutdev defined debug (to xor).
+
+corei7 defined interface (to use) shoot.
+
+hutdev dump neural(s) (semiosis(s) -> __DIE__ OR __END__)
+hutdev ARGVOUT __WARN__ = terminal
+corei7 return continue?
+hutdev accept terminal, life.
+
+corei7 return balance
+hutdev encode english && hex
+
+corei7 run install of name 'balance'

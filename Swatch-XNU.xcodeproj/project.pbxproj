@@ -1,0 +1,1550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		22A745A21998BC64001159DF /* Swatch-NN */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22A745A31998BC64001159DF /* Build configuration list for PBXAggregateTarget "Swatch-NN" */;
+			buildPhases = (
+				221E8AA71998E37900EF4CA7 /* Copy UNIX Files */,
+				221E8AAB1998E3AF00EF4CA7 /* Copy Max MSP/DSP Files */,
+				221E8AB51998E45B00EF4CA7 /* Install XNU Files */,
+				221E8ABE1998E4AB00EF4CA7 /* Copy CUDA Files */,
+			);
+			dependencies = (
+				22A745A71998BC6B001159DF /* PBXTargetDependency */,
+				22A745A91998BC6B001159DF /* PBXTargetDependency */,
+				22A745AB1998BC6B001159DF /* PBXTargetDependency */,
+			);
+			name = "Swatch-NN";
+			productName = "Swatch-NN";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		221E8A8A1998E26600EF4CA7 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E61998AD6800258C2B /* InterfaceBuilderKit.framework */; };
+		221E8A8B1998E26C00EF4CA7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E41998AD5C00258C2B /* Accelerate.framework */; };
+		221E8A8D1998E27500EF4CA7 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A8C1998E27500EF4CA7 /* AppleScriptKit.framework */; };
+		221E8A8E1998E27E00EF4CA7 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A8C1998E27500EF4CA7 /* AppleScriptKit.framework */; };
+		221E8A901998E28600EF4CA7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A8F1998E28600EF4CA7 /* Carbon.framework */; };
+		221E8A921998E29400EF4CA7 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A911998E29400EF4CA7 /* OSAKit.framework */; };
+		221E8A951998E2AF00EF4CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A931998E29E00EF4CA7 /* CoreGraphics.framework */; };
+		221E8A961998E2B400EF4CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A931998E29E00EF4CA7 /* CoreGraphics.framework */; };
+		221E8A971998E2CB00EF4CA7 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A911998E29400EF4CA7 /* OSAKit.framework */; };
+		221E8A981998E2E300EF4CA7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A8F1998E28600EF4CA7 /* Carbon.framework */; };
+		221E8A9B1998E2F700EF4CA7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A9A1998E2F700EF4CA7 /* CFNetwork.framework */; };
+		221E8A9C1998E2FF00EF4CA7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E41998AD5C00258C2B /* Accelerate.framework */; };
+		221E8A9D1998E30800EF4CA7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A9A1998E2F700EF4CA7 /* CFNetwork.framework */; };
+		221E8A9F1998E32200EF4CA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8A9E1998E32200EF4CA7 /* Cocoa.framework */; };
+		221E8AA11998E32D00EF4CA7 /* Kernel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8AA01998E32D00EF4CA7 /* Kernel.framework */; };
+		221E8AA31998E33600EF4CA7 /* DTPerformanceSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8AA21998E33600EF4CA7 /* DTPerformanceSession.framework */; };
+		221E8AA41998E34900EF4CA7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E81998AD7600258C2B /* CoreText.framework */; };
+		221E8AA61998E35300EF4CA7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E8AA51998E35300EF4CA7 /* GLUT.framework */; };
+		221E8AA81998E39B00EF4CA7 /* papa in Copy UNIX Files */ = {isa = PBXBuildFile; fileRef = 22A745061998B902001159DF /* papa */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AA91998E39B00EF4CA7 /* oscar in Copy UNIX Files */ = {isa = PBXBuildFile; fileRef = 22A7450E1998B902001159DF /* oscar */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AAA1998E39B00EF4CA7 /* simple-neuron in Copy UNIX Files */ = {isa = PBXBuildFile; fileRef = 22A744B81998B5DC001159DF /* simple-neuron */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AAC1998E3E100EF4CA7 /* NN_auto.maxpat in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745121998B902001159DF /* NN_auto.maxpat */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AAD1998E3E100EF4CA7 /* NN_midi.maxpat in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745131998B902001159DF /* NN_midi.maxpat */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AAE1998E3E100EF4CA7 /* NN_float.maxpat in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745141998B902001159DF /* NN_float.maxpat */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AAF1998E3E100EF4CA7 /* Brain Tester.maxpat in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A744CA1998B78A001159DF /* Brain Tester.maxpat */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB01998E44D00EF4CA7 /* PkgInfo in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745071998B902001159DF /* PkgInfo */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB11998E44D00EF4CA7 /* maxmspsdk.xcconfig in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745091998B902001159DF /* maxmspsdk.xcconfig */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB21998E44D00EF4CA7 /* PkgInfo in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A7450F1998B902001159DF /* PkgInfo */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB31998E44D00EF4CA7 /* maxmspsdk.xcconfig in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A745111998B902001159DF /* maxmspsdk.xcconfig */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB41998E44D00EF4CA7 /* Swatch.maxhelp in Copy Max MSP/DSP Files */ = {isa = PBXBuildFile; fileRef = 22A744AE1998B50F001159DF /* Swatch.maxhelp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB61998E49C00EF4CA7 /* Swatch XNU.xml in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF3A001998AE7F00258C2B /* Swatch XNU.xml */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB71998E49C00EF4CA7 /* Max Implementation.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39FD1998AE7F00258C2B /* Max Implementation.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB81998E49C00EF4CA7 /* Foundation.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39FC1998AE7F00258C2B /* Foundation.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AB91998E49C00EF4CA7 /* Other Implementation.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39FE1998AE7F00258C2B /* Other Implementation.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8ABA1998E49C00EF4CA7 /* DSP.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39FB1998AE7F00258C2B /* DSP.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8ABB1998E49C00EF4CA7 /* Max Object Protocol.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39F71998AE7F00258C2B /* Max Object Protocol.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8ABC1998E49C00EF4CA7 /* Modular Doxygen.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF39FF1998AE7F00258C2B /* Modular Doxygen.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8ABD1998E49C00EF4CA7 /* Swift.xnu in Install XNU Files */ = {isa = PBXBuildFile; fileRef = 22AF3A011998AE7F00258C2B /* Swift.xnu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8ABF1998E4CC00EF4CA7 /* inverse.cu in Copy CUDA Files */ = {isa = PBXBuildFile; fileRef = 22A745261998B9AD001159DF /* inverse.cu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		221E8AC01998E4CC00EF4CA7 /* solve.cu in Copy CUDA Files */ = {isa = PBXBuildFile; fileRef = 22A745271998B9AD001159DF /* solve.cu */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		22A744A21998B3FE001159DF /* Darwin.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A7449E1998B3FE001159DF /* Darwin.d */; };
+		22A744A31998B3FE001159DF /* regs_x86_64.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A7449F1998B3FE001159DF /* regs_x86_64.d */; };
+		22A744A41998B3FE001159DF /* Signal.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A01998B3FE001159DF /* Signal.d */; };
+		22A744A51998B3FE001159DF /* Socket.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A11998B3FE001159DF /* Socket.d */; };
+		22A744AA1998B4A2001159DF /* ActionGUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A81998B4A2001159DF /* ActionGUI.swift */; };
+		22A744AB1998B4A2001159DF /* WaveShaping.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A91998B4A2001159DF /* WaveShaping.metal */; };
+		22A744AF1998B50F001159DF /* Swatch.maxhelp in Resources */ = {isa = PBXBuildFile; fileRef = 22A744AE1998B50F001159DF /* Swatch.maxhelp */; };
+		22A744B11998B533001159DF /* SwatchKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744B01998B533001159DF /* SwatchKernel.swift */; };
+		22A744B31998B549001159DF /* UNIX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744B21998B549001159DF /* UNIX.swift */; };
+		22A744BA1998B5DC001159DF /* simple-neuron in Resources */ = {isa = PBXBuildFile; fileRef = 22A744B81998B5DC001159DF /* simple-neuron */; };
+		22A744BD1998B613001159DF /* Balance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22A744BC1998B613001159DF /* Balance.metal */; };
+		22A744C01998B6A8001159DF /* Admix.swatch in Resources */ = {isa = PBXBuildFile; fileRef = 22A744BF1998B6A8001159DF /* Admix.swatch */; };
+		22A744C31998B6F6001159DF /* Semiosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744C21998B6F6001159DF /* Semiosis.swift */; };
+		22A744C71998B72C001159DF /* VMGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744C61998B72C001159DF /* VMGB.swift */; };
+		22A744C91998B750001159DF /* Interface.dsp in Resources */ = {isa = PBXBuildFile; fileRef = 22A744C81998B750001159DF /* Interface.dsp */; };
+		22A744CB1998B78A001159DF /* Brain Tester.maxpat in Resources */ = {isa = PBXBuildFile; fileRef = 22A744CA1998B78A001159DF /* Brain Tester.maxpat */; };
+		22A744D41998B86E001159DF /* cuda_runtime_dynlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744CE1998B86E001159DF /* cuda_runtime_dynlink.cpp */; };
+		22A744D51998B86E001159DF /* multithreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744CF1998B86E001159DF /* multithreading.cpp */; };
+		22A744D61998B86E001159DF /* stopwatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D01998B86E001159DF /* stopwatch.cpp */; };
+		22A744D71998B86E001159DF /* rendercheck_d3d9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D11998B86E001159DF /* rendercheck_d3d9.cpp */; };
+		22A744D81998B86E001159DF /* rendercheck_d3d10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D21998B86E001159DF /* rendercheck_d3d10.cpp */; };
+		22A744D91998B86E001159DF /* rendercheck_d3d11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D31998B86E001159DF /* rendercheck_d3d11.cpp */; };
+		22A744EC1998B8AD001159DF /* AAPLAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DB1998B8AD001159DF /* AAPLAddItemViewController.m */; };
+		22A744ED1998B8AD001159DF /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DD1998B8AD001159DF /* AAPLAppDelegate.m */; };
+		22A744EE1998B8AD001159DF /* AAPLColorPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DF1998B8AD001159DF /* AAPLColorPaletteView.m */; };
+		22A744EF1998B8AD001159DF /* AAPLListItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E11998B8AD001159DF /* AAPLListItemView.m */; };
+		22A744F01998B8AD001159DF /* AAPLListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E31998B8AD001159DF /* AAPLListTableView.m */; };
+		22A744F11998B8AD001159DF /* AAPLListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E51998B8AD001159DF /* AAPLListViewController.m */; };
+		22A744F21998B8AD001159DF /* AAPLListWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E71998B8AD001159DF /* AAPLListWindowController.m */; };
+		22A744F31998B8AD001159DF /* AAPLResizingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E91998B8AD001159DF /* AAPLResizingTextField.m */; };
+		22A744F41998B8AD001159DF /* AAPLTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744EB1998B8AD001159DF /* AAPLTableRowView.m */; };
+		22A744FE1998B8DD001159DF /* AAPLAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F71998B8DD001159DF /* AAPLAppConfiguration.m */; };
+		22A744FF1998B8DD001159DF /* AAPLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F91998B8DD001159DF /* AAPLList.m */; };
+		22A745001998B8DD001159DF /* AAPLListColor+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FB1998B8DD001159DF /* AAPLListColor+UI.m */; };
+		22A745011998B8DD001159DF /* AAPLListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FD1998B8DD001159DF /* AAPLListItem.m */; };
+		22A745151998B902001159DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22A745041998B902001159DF /* Info.plist */; };
+		22A745161998B902001159DF /* papa in Resources */ = {isa = PBXBuildFile; fileRef = 22A745061998B902001159DF /* papa */; };
+		22A745171998B902001159DF /* PkgInfo in Resources */ = {isa = PBXBuildFile; fileRef = 22A745071998B902001159DF /* PkgInfo */; };
+		22A745181998B902001159DF /* maxmspsdk.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22A745091998B902001159DF /* maxmspsdk.xcconfig */; };
+		22A745191998B902001159DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22A7450C1998B902001159DF /* Info.plist */; };
+		22A7451A1998B902001159DF /* oscar in Resources */ = {isa = PBXBuildFile; fileRef = 22A7450E1998B902001159DF /* oscar */; };
+		22A7451B1998B902001159DF /* PkgInfo in Resources */ = {isa = PBXBuildFile; fileRef = 22A7450F1998B902001159DF /* PkgInfo */; };
+		22A7451C1998B902001159DF /* maxmspsdk.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22A745111998B902001159DF /* maxmspsdk.xcconfig */; };
+		22A7451D1998B902001159DF /* NN_auto.maxpat in Resources */ = {isa = PBXBuildFile; fileRef = 22A745121998B902001159DF /* NN_auto.maxpat */; };
+		22A7451E1998B902001159DF /* NN_midi.maxpat in Resources */ = {isa = PBXBuildFile; fileRef = 22A745131998B902001159DF /* NN_midi.maxpat */; };
+		22A7451F1998B902001159DF /* NN_float.maxpat in Resources */ = {isa = PBXBuildFile; fileRef = 22A745141998B902001159DF /* NN_float.maxpat */; };
+		22A745231998B932001159DF /* papa.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A745211998B932001159DF /* papa.c */; };
+		22A745241998B932001159DF /* oscar.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A745221998B932001159DF /* oscar.c */; };
+		22A745281998B9AD001159DF /* inverse.cu in Resources */ = {isa = PBXBuildFile; fileRef = 22A745261998B9AD001159DF /* inverse.cu */; };
+		22A745291998B9AD001159DF /* solve.cu in Resources */ = {isa = PBXBuildFile; fileRef = 22A745271998B9AD001159DF /* solve.cu */; };
+		22A745371998BA34001159DF /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22A745361998BA34001159DF /* icon.icns */; };
+		22A7453C1998BA34001159DF /* ActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A7453B1998BA34001159DF /* ActionViewController.xib */; };
+		22A7453F1998BA34001159DF /* Neural Interface Sources.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22A745321998BA34001159DF /* Neural Interface Sources.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22A745461998BB2C001159DF /* papa in Sources */ = {isa = PBXBuildFile; fileRef = 22A745061998B902001159DF /* papa */; };
+		22A745471998BB2C001159DF /* PkgInfo in Sources */ = {isa = PBXBuildFile; fileRef = 22A745071998B902001159DF /* PkgInfo */; };
+		22A745481998BB2C001159DF /* maxmspsdk.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = 22A745091998B902001159DF /* maxmspsdk.xcconfig */; };
+		22A745491998BB2C001159DF /* oscar in Sources */ = {isa = PBXBuildFile; fileRef = 22A7450E1998B902001159DF /* oscar */; };
+		22A7454A1998BB2C001159DF /* PkgInfo in Sources */ = {isa = PBXBuildFile; fileRef = 22A7450F1998B902001159DF /* PkgInfo */; };
+		22A7454B1998BB2C001159DF /* maxmspsdk.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = 22A745111998B902001159DF /* maxmspsdk.xcconfig */; };
+		22A7454C1998BB2C001159DF /* NN_auto.maxpat in Sources */ = {isa = PBXBuildFile; fileRef = 22A745121998B902001159DF /* NN_auto.maxpat */; };
+		22A7454D1998BB2C001159DF /* NN_midi.maxpat in Sources */ = {isa = PBXBuildFile; fileRef = 22A745131998B902001159DF /* NN_midi.maxpat */; };
+		22A7454E1998BB2C001159DF /* NN_float.maxpat in Sources */ = {isa = PBXBuildFile; fileRef = 22A745141998B902001159DF /* NN_float.maxpat */; };
+		22A7454F1998BB2C001159DF /* Brain Tester.maxpat in Sources */ = {isa = PBXBuildFile; fileRef = 22A744CA1998B78A001159DF /* Brain Tester.maxpat */; };
+		22A745501998BB2C001159DF /* Interface.dsp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744C81998B750001159DF /* Interface.dsp */; };
+		22A745511998BB2C001159DF /* simple-neuron in Sources */ = {isa = PBXBuildFile; fileRef = 22A744B81998B5DC001159DF /* simple-neuron */; };
+		22A745521998BB2C001159DF /* WaveShaping.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A91998B4A2001159DF /* WaveShaping.metal */; };
+		22A745531998BB2C001159DF /* Balance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22A744BC1998B613001159DF /* Balance.metal */; };
+		22A745541998BB2C001159DF /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A745391998BA34001159DF /* ActionViewController.swift */; };
+		22A745551998BB2C001159DF /* SwatchKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744B01998B533001159DF /* SwatchKernel.swift */; };
+		22A745561998BB2C001159DF /* ActionGUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A81998B4A2001159DF /* ActionGUI.swift */; };
+		22A745571998BB2C001159DF /* ActionViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 22A7453B1998BA34001159DF /* ActionViewController.xib */; };
+		22A745581998BB3B001159DF /* Neural_Interface_Sources.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 22A745381998BA34001159DF /* Neural_Interface_Sources.entitlements */; };
+		22A745631998BBBA001159DF /* LinguisticSignalSystem.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A745621998BBBA001159DF /* LinguisticSignalSystem.c */; };
+		22A7456B1998BC0C001159DF /* papa.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A745211998B932001159DF /* papa.c */; };
+		22A7456C1998BC0C001159DF /* oscar.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A745221998B932001159DF /* oscar.c */; };
+		22A7456D1998BC0C001159DF /* AAPLAppConfiguration.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F61998B8DD001159DF /* AAPLAppConfiguration.h */; };
+		22A7456E1998BC0C001159DF /* AAPLAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F71998B8DD001159DF /* AAPLAppConfiguration.m */; };
+		22A7456F1998BC0C001159DF /* AAPLList.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F81998B8DD001159DF /* AAPLList.h */; };
+		22A745701998BC0C001159DF /* AAPLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744F91998B8DD001159DF /* AAPLList.m */; };
+		22A745711998BC0C001159DF /* AAPLListColor+UI.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FA1998B8DD001159DF /* AAPLListColor+UI.h */; };
+		22A745721998BC0C001159DF /* AAPLListColor+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FB1998B8DD001159DF /* AAPLListColor+UI.m */; };
+		22A745731998BC0C001159DF /* AAPLListItem.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FC1998B8DD001159DF /* AAPLListItem.h */; };
+		22A745741998BC0C001159DF /* AAPLListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744FD1998B8DD001159DF /* AAPLListItem.m */; };
+		22A745751998BC0C001159DF /* AAPLAddItemViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DA1998B8AD001159DF /* AAPLAddItemViewController.h */; };
+		22A745761998BC0C001159DF /* AAPLAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DB1998B8AD001159DF /* AAPLAddItemViewController.m */; };
+		22A745771998BC0C001159DF /* AAPLAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DC1998B8AD001159DF /* AAPLAppDelegate.h */; };
+		22A745781998BC0C001159DF /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DD1998B8AD001159DF /* AAPLAppDelegate.m */; };
+		22A745791998BC0C001159DF /* AAPLColorPaletteView.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DE1998B8AD001159DF /* AAPLColorPaletteView.h */; };
+		22A7457A1998BC0C001159DF /* AAPLColorPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744DF1998B8AD001159DF /* AAPLColorPaletteView.m */; };
+		22A7457B1998BC0C001159DF /* AAPLListItemView.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E01998B8AD001159DF /* AAPLListItemView.h */; };
+		22A7457C1998BC0C001159DF /* AAPLListItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E11998B8AD001159DF /* AAPLListItemView.m */; };
+		22A7457D1998BC0C001159DF /* AAPLListTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E21998B8AD001159DF /* AAPLListTableView.h */; };
+		22A7457E1998BC0C001159DF /* AAPLListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E31998B8AD001159DF /* AAPLListTableView.m */; };
+		22A7457F1998BC0C001159DF /* AAPLListViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E41998B8AD001159DF /* AAPLListViewController.h */; };
+		22A745801998BC0C001159DF /* AAPLListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E51998B8AD001159DF /* AAPLListViewController.m */; };
+		22A745811998BC0C001159DF /* AAPLListWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E61998B8AD001159DF /* AAPLListWindowController.h */; };
+		22A745821998BC0C001159DF /* AAPLListWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E71998B8AD001159DF /* AAPLListWindowController.m */; };
+		22A745831998BC0C001159DF /* AAPLResizingTextField.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E81998B8AD001159DF /* AAPLResizingTextField.h */; };
+		22A745841998BC0C001159DF /* AAPLResizingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744E91998B8AD001159DF /* AAPLResizingTextField.m */; };
+		22A745851998BC0C001159DF /* AAPLTableRowView.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A744EA1998B8AD001159DF /* AAPLTableRowView.h */; };
+		22A745861998BC0C001159DF /* AAPLTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A744EB1998B8AD001159DF /* AAPLTableRowView.m */; };
+		22A745871998BC0C001159DF /* operations.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A7452B1998B9D9001159DF /* operations.h */; };
+		22A745881998BC0C001159DF /* solve.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A7452C1998B9D9001159DF /* solve.h */; };
+		22A745891998BC0C001159DF /* inverse.h in Sources */ = {isa = PBXBuildFile; fileRef = 22A7452D1998B9D9001159DF /* inverse.h */; };
+		22A7458A1998BC0C001159DF /* inverse.cu in Sources */ = {isa = PBXBuildFile; fileRef = 22A745261998B9AD001159DF /* inverse.cu */; };
+		22A7458B1998BC0C001159DF /* solve.cu in Sources */ = {isa = PBXBuildFile; fileRef = 22A745271998B9AD001159DF /* solve.cu */; };
+		22A7458C1998BC0C001159DF /* cuda_runtime_dynlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744CE1998B86E001159DF /* cuda_runtime_dynlink.cpp */; };
+		22A7458D1998BC0C001159DF /* multithreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744CF1998B86E001159DF /* multithreading.cpp */; };
+		22A7458E1998BC0C001159DF /* stopwatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D01998B86E001159DF /* stopwatch.cpp */; };
+		22A7458F1998BC0C001159DF /* rendercheck_d3d9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D11998B86E001159DF /* rendercheck_d3d9.cpp */; };
+		22A745901998BC0C001159DF /* rendercheck_d3d10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D21998B86E001159DF /* rendercheck_d3d10.cpp */; };
+		22A745911998BC0C001159DF /* rendercheck_d3d11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744D31998B86E001159DF /* rendercheck_d3d11.cpp */; };
+		22A745921998BC0C001159DF /* VMGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744C61998B72C001159DF /* VMGB.swift */; };
+		22A745931998BC0C001159DF /* Semiosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744C21998B6F6001159DF /* Semiosis.swift */; };
+		22A745941998BC0C001159DF /* Admix.swatch in Sources */ = {isa = PBXBuildFile; fileRef = 22A744BF1998B6A8001159DF /* Admix.swatch */; };
+		22A745951998BC22001159DF /* UNIX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A744B21998B549001159DF /* UNIX.swift */; };
+		22A745961998BC22001159DF /* Darwin.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A7449E1998B3FE001159DF /* Darwin.d */; };
+		22A745971998BC22001159DF /* regs_x86_64.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A7449F1998B3FE001159DF /* regs_x86_64.d */; };
+		22A745981998BC22001159DF /* Signal.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A01998B3FE001159DF /* Signal.d */; };
+		22A745991998BC22001159DF /* Socket.d in Sources */ = {isa = PBXBuildFile; fileRef = 22A744A11998B3FE001159DF /* Socket.d */; };
+		22A7459A1998BC3C001159DF /* Swatch.maxhelp in Sources */ = {isa = PBXBuildFile; fileRef = 22A744AE1998B50F001159DF /* Swatch.maxhelp */; };
+		22A7459B1998BC3C001159DF /* Max Implementation.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FD1998AE7F00258C2B /* Max Implementation.xnu */; };
+		22A7459C1998BC3C001159DF /* Foundation.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FC1998AE7F00258C2B /* Foundation.xnu */; };
+		22A7459D1998BC3C001159DF /* Other Implementation.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FE1998AE7F00258C2B /* Other Implementation.xnu */; };
+		22A7459E1998BC3C001159DF /* DSP.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FB1998AE7F00258C2B /* DSP.xnu */; };
+		22A7459F1998BC3C001159DF /* Max Object Protocol.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39F71998AE7F00258C2B /* Max Object Protocol.xnu */; };
+		22A745A01998BC3C001159DF /* Modular Doxygen.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FF1998AE7F00258C2B /* Modular Doxygen.xnu */; };
+		22A745A11998BC3C001159DF /* Swift.xnu in Sources */ = {isa = PBXBuildFile; fileRef = 22AF3A011998AE7F00258C2B /* Swift.xnu */; };
+		22A745AC1998BDDC001159DF /* Swatch-XNU UI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39DC1998AD1800258C2B /* Swatch-XNU UI.xib */; };
+		22AF39D71998AD1800258C2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39D61998AD1800258C2B /* main.m */; };
+		22AF39DB1998AD1800258C2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39DA1998AD1800258C2B /* Images.xcassets */; };
+		22AF39E51998AD5C00258C2B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E41998AD5C00258C2B /* Accelerate.framework */; };
+		22AF39E71998AD6800258C2B /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AF39E61998AD6800258C2B /* InterfaceBuilderKit.framework */; };
+		22AF3A021998AE7F00258C2B /* Max Object Protocol.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39F71998AE7F00258C2B /* Max Object Protocol.xnu */; };
+		22AF3A031998AE7F00258C2B /* Bundle.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39F81998AE7F00258C2B /* Bundle.icns */; };
+		22AF3A041998AE7F00258C2B /* Simple Neuron.c in Sources */ = {isa = PBXBuildFile; fileRef = 22AF39FA1998AE7F00258C2B /* Simple Neuron.c */; };
+		22AF3A051998AE7F00258C2B /* DSP.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39FB1998AE7F00258C2B /* DSP.xnu */; };
+		22AF3A061998AE7F00258C2B /* Foundation.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39FC1998AE7F00258C2B /* Foundation.xnu */; };
+		22AF3A071998AE7F00258C2B /* Max Implementation.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39FD1998AE7F00258C2B /* Max Implementation.xnu */; };
+		22AF3A081998AE7F00258C2B /* Other Implementation.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39FE1998AE7F00258C2B /* Other Implementation.xnu */; };
+		22AF3A091998AE7F00258C2B /* Modular Doxygen.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF39FF1998AE7F00258C2B /* Modular Doxygen.xnu */; };
+		22AF3A0A1998AE7F00258C2B /* Swatch XNU.xml in Resources */ = {isa = PBXBuildFile; fileRef = 22AF3A001998AE7F00258C2B /* Swatch XNU.xml */; };
+		22AF3A0B1998AE7F00258C2B /* Swift.xnu in Resources */ = {isa = PBXBuildFile; fileRef = 22AF3A011998AE7F00258C2B /* Swift.xnu */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A7453D1998BA34001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A745311998BA34001159DF;
+			remoteInfo = "Neural Interface Sources";
+		};
+		22A745401998BA34001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A745311998BA34001159DF;
+			remoteInfo = "Neural Interface Sources";
+		};
+		22A745671998BBEB001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A745311998BA34001159DF;
+			remoteInfo = "Neural Interface Sources";
+		};
+		22A745691998BBF3001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A7455D1998BBBA001159DF;
+			remoteInfo = LinguisticSignalSystem;
+		};
+		22A745A61998BC6B001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22AF39CD1998AD1800258C2B;
+			remoteInfo = "Swatch-XNU";
+		};
+		22A745A81998BC6B001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A745311998BA34001159DF;
+			remoteInfo = "Neural Interface Sources";
+		};
+		22A745AA1998BC6B001159DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22AF39C61998AD1800258C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A7455D1998BBBA001159DF;
+			remoteInfo = LinguisticSignalSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		221E8AA71998E37900EF4CA7 /* Copy UNIX Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				221E8AA81998E39B00EF4CA7 /* papa in Copy UNIX Files */,
+				221E8AA91998E39B00EF4CA7 /* oscar in Copy UNIX Files */,
+				221E8AAA1998E39B00EF4CA7 /* simple-neuron in Copy UNIX Files */,
+			);
+			name = "Copy UNIX Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		221E8AAB1998E3AF00EF4CA7 /* Copy Max MSP/DSP Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /System/Library/SwatchXNU/MaxMSPDSP;
+			dstSubfolderSpec = 0;
+			files = (
+				221E8AB01998E44D00EF4CA7 /* PkgInfo in Copy Max MSP/DSP Files */,
+				221E8AB11998E44D00EF4CA7 /* maxmspsdk.xcconfig in Copy Max MSP/DSP Files */,
+				221E8AB21998E44D00EF4CA7 /* PkgInfo in Copy Max MSP/DSP Files */,
+				221E8AB31998E44D00EF4CA7 /* maxmspsdk.xcconfig in Copy Max MSP/DSP Files */,
+				221E8AB41998E44D00EF4CA7 /* Swatch.maxhelp in Copy Max MSP/DSP Files */,
+				221E8AAC1998E3E100EF4CA7 /* NN_auto.maxpat in Copy Max MSP/DSP Files */,
+				221E8AAD1998E3E100EF4CA7 /* NN_midi.maxpat in Copy Max MSP/DSP Files */,
+				221E8AAE1998E3E100EF4CA7 /* NN_float.maxpat in Copy Max MSP/DSP Files */,
+				221E8AAF1998E3E100EF4CA7 /* Brain Tester.maxpat in Copy Max MSP/DSP Files */,
+			);
+			name = "Copy Max MSP/DSP Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221E8AB51998E45B00EF4CA7 /* Install XNU Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /System/Library/SwatchXNU/Darwin;
+			dstSubfolderSpec = 0;
+			files = (
+				221E8AB61998E49C00EF4CA7 /* Swatch XNU.xml in Install XNU Files */,
+				221E8AB71998E49C00EF4CA7 /* Max Implementation.xnu in Install XNU Files */,
+				221E8AB81998E49C00EF4CA7 /* Foundation.xnu in Install XNU Files */,
+				221E8AB91998E49C00EF4CA7 /* Other Implementation.xnu in Install XNU Files */,
+				221E8ABA1998E49C00EF4CA7 /* DSP.xnu in Install XNU Files */,
+				221E8ABB1998E49C00EF4CA7 /* Max Object Protocol.xnu in Install XNU Files */,
+				221E8ABC1998E49C00EF4CA7 /* Modular Doxygen.xnu in Install XNU Files */,
+				221E8ABD1998E49C00EF4CA7 /* Swift.xnu in Install XNU Files */,
+			);
+			name = "Install XNU Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221E8ABE1998E4AB00EF4CA7 /* Copy CUDA Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /System/Library/SwatchXNU/Darwin;
+			dstSubfolderSpec = 0;
+			files = (
+				221E8ABF1998E4CC00EF4CA7 /* inverse.cu in Copy CUDA Files */,
+				221E8AC01998E4CC00EF4CA7 /* solve.cu in Copy CUDA Files */,
+			);
+			name = "Copy CUDA Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A745451998BA35001159DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22A7453F1998BA34001159DF /* Neural Interface Sources.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		221E8A8C1998E27500EF4CA7 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
+		221E8A8F1998E28600EF4CA7 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		221E8A911998E29400EF4CA7 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
+		221E8A931998E29E00EF4CA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		221E8A9A1998E2F700EF4CA7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		221E8A9E1998E32200EF4CA7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		221E8AA01998E32D00EF4CA7 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		221E8AA21998E33600EF4CA7 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
+		221E8AA51998E35300EF4CA7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		22A7449E1998B3FE001159DF /* Darwin.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = Darwin.d; sourceTree = "<group>"; };
+		22A7449F1998B3FE001159DF /* regs_x86_64.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = regs_x86_64.d; sourceTree = "<group>"; };
+		22A744A01998B3FE001159DF /* Signal.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = Signal.d; sourceTree = "<group>"; };
+		22A744A11998B3FE001159DF /* Socket.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = Socket.d; sourceTree = "<group>"; };
+		22A744A81998B4A2001159DF /* ActionGUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionGUI.swift; path = ../ActionGUI.swift; sourceTree = "<group>"; };
+		22A744A91998B4A2001159DF /* WaveShaping.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = WaveShaping.metal; path = ../WaveShaping.metal; sourceTree = "<group>"; };
+		22A744AE1998B50F001159DF /* Swatch.maxhelp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swatch.maxhelp; sourceTree = "<group>"; };
+		22A744B01998B533001159DF /* SwatchKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwatchKernel.swift; path = ../SwatchKernel.swift; sourceTree = "<group>"; };
+		22A744B21998B549001159DF /* UNIX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNIX.swift; sourceTree = "<group>"; };
+		22A744B81998B5DC001159DF /* simple-neuron */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "simple-neuron"; sourceTree = "<group>"; };
+		22A744BC1998B613001159DF /* Balance.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Balance.metal; sourceTree = "<group>"; };
+		22A744BF1998B6A8001159DF /* Admix.swatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Admix.swatch; sourceTree = "<group>"; };
+		22A744C21998B6F6001159DF /* Semiosis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semiosis.swift; sourceTree = "<group>"; };
+		22A744C61998B72C001159DF /* VMGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMGB.swift; sourceTree = "<group>"; };
+		22A744C81998B750001159DF /* Interface.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Interface.dsp; sourceTree = "<group>"; };
+		22A744CA1998B78A001159DF /* Brain Tester.maxpat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Brain Tester.maxpat"; sourceTree = "<group>"; };
+		22A744CE1998B86E001159DF /* cuda_runtime_dynlink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cuda_runtime_dynlink.cpp; sourceTree = "<group>"; };
+		22A744CF1998B86E001159DF /* multithreading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = multithreading.cpp; sourceTree = "<group>"; };
+		22A744D01998B86E001159DF /* stopwatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stopwatch.cpp; sourceTree = "<group>"; };
+		22A744D11998B86E001159DF /* rendercheck_d3d9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rendercheck_d3d9.cpp; sourceTree = "<group>"; };
+		22A744D21998B86E001159DF /* rendercheck_d3d10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rendercheck_d3d10.cpp; sourceTree = "<group>"; };
+		22A744D31998B86E001159DF /* rendercheck_d3d11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rendercheck_d3d11.cpp; sourceTree = "<group>"; };
+		22A744DA1998B8AD001159DF /* AAPLAddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAddItemViewController.h; sourceTree = "<group>"; };
+		22A744DB1998B8AD001159DF /* AAPLAddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAddItemViewController.m; sourceTree = "<group>"; };
+		22A744DC1998B8AD001159DF /* AAPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAppDelegate.h; sourceTree = "<group>"; };
+		22A744DD1998B8AD001159DF /* AAPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAppDelegate.m; sourceTree = "<group>"; };
+		22A744DE1998B8AD001159DF /* AAPLColorPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLColorPaletteView.h; sourceTree = "<group>"; };
+		22A744DF1998B8AD001159DF /* AAPLColorPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLColorPaletteView.m; sourceTree = "<group>"; };
+		22A744E01998B8AD001159DF /* AAPLListItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLListItemView.h; sourceTree = "<group>"; };
+		22A744E11998B8AD001159DF /* AAPLListItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLListItemView.m; sourceTree = "<group>"; };
+		22A744E21998B8AD001159DF /* AAPLListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLListTableView.h; sourceTree = "<group>"; };
+		22A744E31998B8AD001159DF /* AAPLListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLListTableView.m; sourceTree = "<group>"; };
+		22A744E41998B8AD001159DF /* AAPLListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLListViewController.h; sourceTree = "<group>"; };
+		22A744E51998B8AD001159DF /* AAPLListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLListViewController.m; sourceTree = "<group>"; };
+		22A744E61998B8AD001159DF /* AAPLListWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLListWindowController.h; sourceTree = "<group>"; };
+		22A744E71998B8AD001159DF /* AAPLListWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLListWindowController.m; sourceTree = "<group>"; };
+		22A744E81998B8AD001159DF /* AAPLResizingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLResizingTextField.h; sourceTree = "<group>"; };
+		22A744E91998B8AD001159DF /* AAPLResizingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLResizingTextField.m; sourceTree = "<group>"; };
+		22A744EA1998B8AD001159DF /* AAPLTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLTableRowView.h; sourceTree = "<group>"; };
+		22A744EB1998B8AD001159DF /* AAPLTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLTableRowView.m; sourceTree = "<group>"; };
+		22A744F61998B8DD001159DF /* AAPLAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAppConfiguration.h; sourceTree = "<group>"; };
+		22A744F71998B8DD001159DF /* AAPLAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAppConfiguration.m; sourceTree = "<group>"; };
+		22A744F81998B8DD001159DF /* AAPLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLList.h; sourceTree = "<group>"; };
+		22A744F91998B8DD001159DF /* AAPLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLList.m; sourceTree = "<group>"; };
+		22A744FA1998B8DD001159DF /* AAPLListColor+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AAPLListColor+UI.h"; sourceTree = "<group>"; };
+		22A744FB1998B8DD001159DF /* AAPLListColor+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AAPLListColor+UI.m"; sourceTree = "<group>"; };
+		22A744FC1998B8DD001159DF /* AAPLListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLListItem.h; sourceTree = "<group>"; };
+		22A744FD1998B8DD001159DF /* AAPLListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLListItem.m; sourceTree = "<group>"; };
+		22A745041998B902001159DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A745061998B902001159DF /* papa */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = papa; sourceTree = "<group>"; };
+		22A745071998B902001159DF /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		22A745091998B902001159DF /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
+		22A7450C1998B902001159DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A7450E1998B902001159DF /* oscar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = oscar; sourceTree = "<group>"; };
+		22A7450F1998B902001159DF /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		22A745111998B902001159DF /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
+		22A745121998B902001159DF /* NN_auto.maxpat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NN_auto.maxpat; sourceTree = "<group>"; };
+		22A745131998B902001159DF /* NN_midi.maxpat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NN_midi.maxpat; sourceTree = "<group>"; };
+		22A745141998B902001159DF /* NN_float.maxpat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NN_float.maxpat; sourceTree = "<group>"; };
+		22A745211998B932001159DF /* papa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = papa.c; sourceTree = "<group>"; };
+		22A745221998B932001159DF /* oscar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oscar.c; sourceTree = "<group>"; };
+		22A745261998B9AD001159DF /* inverse.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inverse.cu; sourceTree = "<group>"; };
+		22A745271998B9AD001159DF /* solve.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solve.cu; sourceTree = "<group>"; };
+		22A7452B1998B9D9001159DF /* operations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = operations.h; sourceTree = "<group>"; };
+		22A7452C1998B9D9001159DF /* solve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = solve.h; sourceTree = "<group>"; };
+		22A7452D1998B9D9001159DF /* inverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inverse.h; sourceTree = "<group>"; };
+		22A745321998BA34001159DF /* Neural Interface Sources.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Neural Interface Sources.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A745351998BA34001159DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A745361998BA34001159DF /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		22A745381998BA34001159DF /* Neural_Interface_Sources.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Neural_Interface_Sources.entitlements; sourceTree = "<group>"; };
+		22A745391998BA34001159DF /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActionViewController.swift; path = "../Neural Interface Sources/ActionViewController.swift"; sourceTree = "<group>"; };
+		22A7453B1998BA34001159DF /* ActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionViewController.xib; sourceTree = "<group>"; };
+		22A7455E1998BBBA001159DF /* LinguisticSignalSystem.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinguisticSignalSystem.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A745611998BBBA001159DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A745621998BBBA001159DF /* LinguisticSignalSystem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinguisticSignalSystem.c; sourceTree = "<group>"; };
+		22A745AD1998BE4D001159DF /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = en; path = "en.lproj/Swatch-XNU UI.xib"; sourceTree = "<group>"; };
+		22AF39CE1998AD1800258C2B /* Swatch-XNU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swatch-XNU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22AF39D11998AD1800258C2B /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		22AF39D51998AD1800258C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22AF39D61998AD1800258C2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22AF39DA1998AD1800258C2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../../../../../../../usr/git-origin/Swatch-GNU/Swatch-GNU/Images.xcassets"; sourceTree = SDKROOT; };
+		22AF39DD1998AD1800258C2B /* Base */ = {isa = PBXFileReference; explicitFileType = sourcecode.metal; name = Base; path = "Base.lproj/Swatch-XNU UI.xib"; sourceTree = "<group>"; };
+		22AF39E41998AD5C00258C2B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		22AF39E61998AD6800258C2B /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
+		22AF39E81998AD7600258C2B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		22AF39EA1998AD7D00258C2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22AF39F71998AE7F00258C2B /* Max Object Protocol.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Max Object Protocol.xnu"; sourceTree = "<group>"; };
+		22AF39F81998AE7F00258C2B /* Bundle.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Bundle.icns; sourceTree = "<group>"; };
+		22AF39F91998AE7F00258C2B /* Meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meta.h; sourceTree = "<group>"; };
+		22AF39FA1998AE7F00258C2B /* Simple Neuron.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "Simple Neuron.c"; sourceTree = "<group>"; };
+		22AF39FB1998AE7F00258C2B /* DSP.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DSP.xnu; sourceTree = "<group>"; };
+		22AF39FC1998AE7F00258C2B /* Foundation.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Foundation.xnu; sourceTree = "<group>"; };
+		22AF39FD1998AE7F00258C2B /* Max Implementation.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Max Implementation.xnu"; sourceTree = "<group>"; };
+		22AF39FE1998AE7F00258C2B /* Other Implementation.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Other Implementation.xnu"; sourceTree = "<group>"; };
+		22AF39FF1998AE7F00258C2B /* Modular Doxygen.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Modular Doxygen.xnu"; sourceTree = "<group>"; };
+		22AF3A001998AE7F00258C2B /* Swatch XNU.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Swatch XNU.xml"; sourceTree = "<group>"; };
+		22AF3A011998AE7F00258C2B /* Swift.xnu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift.xnu; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A7452F1998BA34001159DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221E8A9F1998E32200EF4CA7 /* Cocoa.framework in Frameworks */,
+				221E8A951998E2AF00EF4CA7 /* CoreGraphics.framework in Frameworks */,
+				221E8A8D1998E27500EF4CA7 /* AppleScriptKit.framework in Frameworks */,
+				221E8A8B1998E26C00EF4CA7 /* Accelerate.framework in Frameworks */,
+				221E8A8A1998E26600EF4CA7 /* InterfaceBuilderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A7455A1998BBBA001159DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221E8A921998E29400EF4CA7 /* OSAKit.framework in Frameworks */,
+				221E8AA61998E35300EF4CA7 /* GLUT.framework in Frameworks */,
+				221E8AA41998E34900EF4CA7 /* CoreText.framework in Frameworks */,
+				221E8AA31998E33600EF4CA7 /* DTPerformanceSession.framework in Frameworks */,
+				221E8AA11998E32D00EF4CA7 /* Kernel.framework in Frameworks */,
+				221E8A9D1998E30800EF4CA7 /* CFNetwork.framework in Frameworks */,
+				221E8A9C1998E2FF00EF4CA7 /* Accelerate.framework in Frameworks */,
+				221E8A901998E28600EF4CA7 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22AF39CB1998AD1800258C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221E8A9B1998E2F700EF4CA7 /* CFNetwork.framework in Frameworks */,
+				221E8A981998E2E300EF4CA7 /* Carbon.framework in Frameworks */,
+				221E8A971998E2CB00EF4CA7 /* OSAKit.framework in Frameworks */,
+				221E8A961998E2B400EF4CA7 /* CoreGraphics.framework in Frameworks */,
+				221E8A8E1998E27E00EF4CA7 /* AppleScriptKit.framework in Frameworks */,
+				22AF39E71998AD6800258C2B /* InterfaceBuilderKit.framework in Frameworks */,
+				22AF39E51998AD5C00258C2B /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A7449D1998B3EF001159DF /* UNIX/Darwin Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A744B21998B549001159DF /* UNIX.swift */,
+				22A7449E1998B3FE001159DF /* Darwin.d */,
+				22A7449F1998B3FE001159DF /* regs_x86_64.d */,
+				22A744A01998B3FE001159DF /* Signal.d */,
+				22A744A11998B3FE001159DF /* Socket.d */,
+			);
+			name = "UNIX/Darwin Files";
+			sourceTree = "<group>";
+		};
+		22A744B41998B59B001159DF /* Max MSP/DSP Swatch-XNU Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745021998B902001159DF /* papa.mxo */,
+				22A7450A1998B902001159DF /* oscar.mxo */,
+				22A745121998B902001159DF /* NN_auto.maxpat */,
+				22A745131998B902001159DF /* NN_midi.maxpat */,
+				22A745141998B902001159DF /* NN_float.maxpat */,
+				22A744CA1998B78A001159DF /* Brain Tester.maxpat */,
+				22A744C81998B750001159DF /* Interface.dsp */,
+				22A744B51998B5DC001159DF /* simpleNeuron.mxo */,
+			);
+			name = "Max MSP/DSP Swatch-XNU Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744B51998B5DC001159DF /* simpleNeuron.mxo */ = {
+			isa = PBXGroup;
+			children = (
+				22A744B61998B5DC001159DF /* Contents */,
+			);
+			path = simpleNeuron.mxo;
+			sourceTree = "<group>";
+		};
+		22A744B61998B5DC001159DF /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				22A744B71998B5DC001159DF /* MacOS */,
+				22A744B91998B5DC001159DF /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		22A744B71998B5DC001159DF /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				22A744B81998B5DC001159DF /* simple-neuron */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		22A744B91998B5DC001159DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22A744BB1998B5FB001159DF /* Metal Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744A91998B4A2001159DF /* WaveShaping.metal */,
+				22A744BC1998B613001159DF /* Balance.metal */,
+			);
+			name = "Metal Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744BE1998B692001159DF /* Swatch Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744BF1998B6A8001159DF /* Admix.swatch */,
+			);
+			name = "Swatch Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744C11998B6E8001159DF /* Swift Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745391998BA34001159DF /* ActionViewController.swift */,
+				22A744B01998B533001159DF /* SwatchKernel.swift */,
+				22A744A81998B4A2001159DF /* ActionGUI.swift */,
+			);
+			name = "Swift Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744C51998B71A001159DF /* Swift Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744C61998B72C001159DF /* VMGB.swift */,
+				22A744C21998B6F6001159DF /* Semiosis.swift */,
+			);
+			name = "Swift Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744CC1998B841001159DF /* CUDA C++ Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A7452A1998B9B5001159DF /* CUDA Headers */,
+				22A745251998B995001159DF /* CUDA Sources */,
+				22A744CD1998B84D001159DF /* CUDA C++ Binomial Operations */,
+			);
+			name = "CUDA C++ Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A744CD1998B84D001159DF /* CUDA C++ Binomial Operations */ = {
+			isa = PBXGroup;
+			children = (
+				22A744CE1998B86E001159DF /* cuda_runtime_dynlink.cpp */,
+				22A744CF1998B86E001159DF /* multithreading.cpp */,
+				22A744D01998B86E001159DF /* stopwatch.cpp */,
+				22A744D11998B86E001159DF /* rendercheck_d3d9.cpp */,
+				22A744D21998B86E001159DF /* rendercheck_d3d10.cpp */,
+				22A744D31998B86E001159DF /* rendercheck_d3d11.cpp */,
+			);
+			name = "CUDA C++ Binomial Operations";
+			sourceTree = "<group>";
+		};
+		22A744F51998B8B6001159DF /* Apple Objective-C Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744F61998B8DD001159DF /* AAPLAppConfiguration.h */,
+				22A744F71998B8DD001159DF /* AAPLAppConfiguration.m */,
+				22A744F81998B8DD001159DF /* AAPLList.h */,
+				22A744F91998B8DD001159DF /* AAPLList.m */,
+				22A744FA1998B8DD001159DF /* AAPLListColor+UI.h */,
+				22A744FB1998B8DD001159DF /* AAPLListColor+UI.m */,
+				22A744FC1998B8DD001159DF /* AAPLListItem.h */,
+				22A744FD1998B8DD001159DF /* AAPLListItem.m */,
+				22A744DA1998B8AD001159DF /* AAPLAddItemViewController.h */,
+				22A744DB1998B8AD001159DF /* AAPLAddItemViewController.m */,
+				22A744DC1998B8AD001159DF /* AAPLAppDelegate.h */,
+				22A744DD1998B8AD001159DF /* AAPLAppDelegate.m */,
+				22A744DE1998B8AD001159DF /* AAPLColorPaletteView.h */,
+				22A744DF1998B8AD001159DF /* AAPLColorPaletteView.m */,
+				22A744E01998B8AD001159DF /* AAPLListItemView.h */,
+				22A744E11998B8AD001159DF /* AAPLListItemView.m */,
+				22A744E21998B8AD001159DF /* AAPLListTableView.h */,
+				22A744E31998B8AD001159DF /* AAPLListTableView.m */,
+				22A744E41998B8AD001159DF /* AAPLListViewController.h */,
+				22A744E51998B8AD001159DF /* AAPLListViewController.m */,
+				22A744E61998B8AD001159DF /* AAPLListWindowController.h */,
+				22A744E71998B8AD001159DF /* AAPLListWindowController.m */,
+				22A744E81998B8AD001159DF /* AAPLResizingTextField.h */,
+				22A744E91998B8AD001159DF /* AAPLResizingTextField.m */,
+				22A744EA1998B8AD001159DF /* AAPLTableRowView.h */,
+				22A744EB1998B8AD001159DF /* AAPLTableRowView.m */,
+			);
+			name = "Apple Objective-C Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A745021998B902001159DF /* papa.mxo */ = {
+			isa = PBXGroup;
+			children = (
+				22A745031998B902001159DF /* Contents */,
+			);
+			path = papa.mxo;
+			sourceTree = "<group>";
+		};
+		22A745031998B902001159DF /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				22A745041998B902001159DF /* Info.plist */,
+				22A745051998B902001159DF /* MacOS */,
+				22A745071998B902001159DF /* PkgInfo */,
+				22A745081998B902001159DF /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		22A745051998B902001159DF /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				22A745061998B902001159DF /* papa */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		22A745081998B902001159DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745091998B902001159DF /* maxmspsdk.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22A7450A1998B902001159DF /* oscar.mxo */ = {
+			isa = PBXGroup;
+			children = (
+				22A7450B1998B902001159DF /* Contents */,
+			);
+			path = oscar.mxo;
+			sourceTree = "<group>";
+		};
+		22A7450B1998B902001159DF /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				22A7450C1998B902001159DF /* Info.plist */,
+				22A7450D1998B902001159DF /* MacOS */,
+				22A7450F1998B902001159DF /* PkgInfo */,
+				22A745101998B902001159DF /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		22A7450D1998B902001159DF /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				22A7450E1998B902001159DF /* oscar */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		22A745101998B902001159DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745111998B902001159DF /* maxmspsdk.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22A745201998B913001159DF /* Max MSP/DSP Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745211998B932001159DF /* papa.c */,
+				22A745221998B932001159DF /* oscar.c */,
+			);
+			name = "Max MSP/DSP Sources";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22A745251998B995001159DF /* CUDA Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A745261998B9AD001159DF /* inverse.cu */,
+				22A745271998B9AD001159DF /* solve.cu */,
+			);
+			name = "CUDA Sources";
+			sourceTree = "<group>";
+		};
+		22A7452A1998B9B5001159DF /* CUDA Headers */ = {
+			isa = PBXGroup;
+			children = (
+				22A7452B1998B9D9001159DF /* operations.h */,
+				22A7452C1998B9D9001159DF /* solve.h */,
+				22A7452D1998B9D9001159DF /* inverse.h */,
+			);
+			name = "CUDA Headers";
+			sourceTree = "<group>";
+		};
+		22A745331998BA34001159DF /* Neural Interface Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744B41998B59B001159DF /* Max MSP/DSP Swatch-XNU Sources */,
+				22A744BB1998B5FB001159DF /* Metal Sources */,
+				22A744C11998B6E8001159DF /* Swift Sources */,
+				22A7453B1998BA34001159DF /* ActionViewController.xib */,
+				22AF39DC1998AD1800258C2B /* Swatch-XNU UI.xib */,
+				22A745341998BA34001159DF /* Supporting Files */,
+			);
+			path = "Neural Interface Sources";
+			sourceTree = "<group>";
+		};
+		22A745341998BA34001159DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A745351998BA34001159DF /* Info.plist */,
+				22A745361998BA34001159DF /* icon.icns */,
+				22A745381998BA34001159DF /* Neural_Interface_Sources.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22A7455F1998BBBA001159DF /* LinguisticSignalSystem */ = {
+			isa = PBXGroup;
+			children = (
+				22A745201998B913001159DF /* Max MSP/DSP Sources */,
+				22A744F51998B8B6001159DF /* Apple Objective-C Sources */,
+				22A744CC1998B841001159DF /* CUDA C++ Sources */,
+				22A744C51998B71A001159DF /* Swift Sources */,
+				22A744BE1998B692001159DF /* Swatch Sources */,
+				22A745621998BBBA001159DF /* LinguisticSignalSystem.c */,
+				22A745601998BBBA001159DF /* Supporting Files */,
+			);
+			name = LinguisticSignalSystem;
+			path = ../LinguisticSignalSystem;
+			sourceTree = "<group>";
+		};
+		22A745601998BBBA001159DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A745611998BBBA001159DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22AF39C51998AD1800258C2B = {
+			isa = PBXGroup;
+			children = (
+				22A745331998BA34001159DF /* Neural Interface Sources */,
+				22AF39D31998AD1800258C2B /* Swatch-XNU Backend Sources */,
+				22AF39D01998AD1800258C2B /* Frameworks */,
+				22AF39CF1998AD1800258C2B /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		22AF39CF1998AD1800258C2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22AF39CE1998AD1800258C2B /* Swatch-XNU.app */,
+				22A745321998BA34001159DF /* Neural Interface Sources.appex */,
+				22A7455E1998BBBA001159DF /* LinguisticSignalSystem.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22AF39D01998AD1800258C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				221E8AA51998E35300EF4CA7 /* GLUT.framework */,
+				221E8AA21998E33600EF4CA7 /* DTPerformanceSession.framework */,
+				221E8AA01998E32D00EF4CA7 /* Kernel.framework */,
+				221E8A9E1998E32200EF4CA7 /* Cocoa.framework */,
+				221E8A9A1998E2F700EF4CA7 /* CFNetwork.framework */,
+				221E8A931998E29E00EF4CA7 /* CoreGraphics.framework */,
+				221E8A911998E29400EF4CA7 /* OSAKit.framework */,
+				221E8A8F1998E28600EF4CA7 /* Carbon.framework */,
+				221E8A8C1998E27500EF4CA7 /* AppleScriptKit.framework */,
+				22AF39EA1998AD7D00258C2B /* Foundation.framework */,
+				22AF39E81998AD7600258C2B /* CoreText.framework */,
+				22AF39E61998AD6800258C2B /* InterfaceBuilderKit.framework */,
+				22AF39E41998AD5C00258C2B /* Accelerate.framework */,
+				22AF39D11998AD1800258C2B /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22AF39D31998AD1800258C2B /* Swatch-XNU Backend Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A7455F1998BBBA001159DF /* LinguisticSignalSystem */,
+				22A7449D1998B3EF001159DF /* UNIX/Darwin Files */,
+				22AF3A101998B05C00258C2B /* XML Sources */,
+				22AF3A0F1998AFEF00258C2B /* Image Sources */,
+				22AF3A0E1998AFAE00258C2B /* C Language Sources */,
+				22AF3A0D1998AF8A00258C2B /* Max MSP/DSP Swatch Sources */,
+				22AF3A0C1998AF5F00258C2B /* Swift XNU Sources */,
+				22AF39D41998AD1800258C2B /* Supporting Files */,
+			);
+			name = "Swatch-XNU Backend Sources";
+			path = "Swatch-GNU";
+			sourceTree = "<group>";
+		};
+		22AF39D41998AD1800258C2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22AF39D51998AD1800258C2B /* Info.plist */,
+				22AF39D61998AD1800258C2B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22AF3A0C1998AF5F00258C2B /* Swift XNU Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22AF3A011998AE7F00258C2B /* Swift.xnu */,
+			);
+			name = "Swift XNU Sources";
+			sourceTree = "<group>";
+		};
+		22AF3A0D1998AF8A00258C2B /* Max MSP/DSP Swatch Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22A744AE1998B50F001159DF /* Swatch.maxhelp */,
+				22AF39FD1998AE7F00258C2B /* Max Implementation.xnu */,
+				22AF39FC1998AE7F00258C2B /* Foundation.xnu */,
+				22AF39FE1998AE7F00258C2B /* Other Implementation.xnu */,
+				22AF39FB1998AE7F00258C2B /* DSP.xnu */,
+				22AF39F71998AE7F00258C2B /* Max Object Protocol.xnu */,
+				22AF39FF1998AE7F00258C2B /* Modular Doxygen.xnu */,
+			);
+			name = "Max MSP/DSP Swatch Sources";
+			sourceTree = "<group>";
+		};
+		22AF3A0E1998AFAE00258C2B /* C Language Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22AF39F91998AE7F00258C2B /* Meta.h */,
+				22AF39FA1998AE7F00258C2B /* Simple Neuron.c */,
+			);
+			name = "C Language Sources";
+			sourceTree = "<group>";
+		};
+		22AF3A0F1998AFEF00258C2B /* Image Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22AF39F81998AE7F00258C2B /* Bundle.icns */,
+				22AF39DA1998AD1800258C2B /* Images.xcassets */,
+			);
+			name = "Image Sources";
+			sourceTree = "<group>";
+		};
+		22AF3A101998B05C00258C2B /* XML Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22AF3A001998AE7F00258C2B /* Swatch XNU.xml */,
+			);
+			name = "XML Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22A7455B1998BBBA001159DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22A745311998BA34001159DF /* Neural Interface Sources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A745421998BA35001159DF /* Build configuration list for PBXNativeTarget "Neural Interface Sources" */;
+			buildPhases = (
+				22A7452E1998BA34001159DF /* Sources */,
+				22A7452F1998BA34001159DF /* Frameworks */,
+				22A745301998BA34001159DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A7456A1998BBF3001159DF /* PBXTargetDependency */,
+			);
+			name = "Neural Interface Sources";
+			productName = "Neural Interface Sources";
+			productReference = 22A745321998BA34001159DF /* Neural Interface Sources.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		22A7455D1998BBBA001159DF /* LinguisticSignalSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A745641998BBBA001159DF /* Build configuration list for PBXNativeTarget "LinguisticSignalSystem" */;
+			buildPhases = (
+				22A745591998BBBA001159DF /* Sources */,
+				22A7455A1998BBBA001159DF /* Frameworks */,
+				22A7455B1998BBBA001159DF /* Headers */,
+				22A7455C1998BBBA001159DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A745681998BBEB001159DF /* PBXTargetDependency */,
+			);
+			name = LinguisticSignalSystem;
+			productName = LinguisticSignalSystem;
+			productReference = 22A7455E1998BBBA001159DF /* LinguisticSignalSystem.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		22AF39CD1998AD1800258C2B /* Swatch-XNU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22AF39E11998AD1800258C2B /* Build configuration list for PBXNativeTarget "Swatch-XNU" */;
+			buildPhases = (
+				22AF39CA1998AD1800258C2B /* Sources */,
+				22AF39CB1998AD1800258C2B /* Frameworks */,
+				22AF39CC1998AD1800258C2B /* Resources */,
+				22A745451998BA35001159DF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A7453E1998BA34001159DF /* PBXTargetDependency */,
+				22A745411998BA34001159DF /* PBXTargetDependency */,
+			);
+			name = "Swatch-XNU";
+			productName = "Swatch-GNU";
+			productReference = 22AF39CE1998AD1800258C2B /* Swatch-XNU.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22AF39C61998AD1800258C2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XNU;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = SwatchXNU;
+				TargetAttributes = {
+					22A745311998BA34001159DF = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 292J2U3LUJ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+					22A7455D1998BBBA001159DF = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 292J2U3LUJ;
+					};
+					22A745A21998BC64001159DF = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					22AF39CD1998AD1800258C2B = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 292J2U3LUJ;
+					};
+				};
+			};
+			buildConfigurationList = 22AF39C91998AD1800258C2B /* Build configuration list for PBXProject "Swatch-XNU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22AF39C51998AD1800258C2B;
+			productRefGroup = 22AF39CF1998AD1800258C2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22AF39CD1998AD1800258C2B /* Swatch-XNU */,
+				22A745311998BA34001159DF /* Neural Interface Sources */,
+				22A7455D1998BBBA001159DF /* LinguisticSignalSystem */,
+				22A745A21998BC64001159DF /* Swatch-NN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A745301998BA34001159DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A745581998BB3B001159DF /* Neural_Interface_Sources.entitlements in Resources */,
+				22A7453C1998BA34001159DF /* ActionViewController.xib in Resources */,
+				22A745371998BA34001159DF /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A7455C1998BBBA001159DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22AF39CC1998AD1800258C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A744CB1998B78A001159DF /* Brain Tester.maxpat in Resources */,
+				22AF3A071998AE7F00258C2B /* Max Implementation.xnu in Resources */,
+				22AF3A021998AE7F00258C2B /* Max Object Protocol.xnu in Resources */,
+				22A7451C1998B902001159DF /* maxmspsdk.xcconfig in Resources */,
+				22AF3A091998AE7F00258C2B /* Modular Doxygen.xnu in Resources */,
+				22A7451A1998B902001159DF /* oscar in Resources */,
+				22A744C91998B750001159DF /* Interface.dsp in Resources */,
+				22AF3A081998AE7F00258C2B /* Other Implementation.xnu in Resources */,
+				22A745151998B902001159DF /* Info.plist in Resources */,
+				22A7451D1998B902001159DF /* NN_auto.maxpat in Resources */,
+				22A7451E1998B902001159DF /* NN_midi.maxpat in Resources */,
+				22A745161998B902001159DF /* papa in Resources */,
+				22A745291998B9AD001159DF /* solve.cu in Resources */,
+				22AF3A0B1998AE7F00258C2B /* Swift.xnu in Resources */,
+				22A745191998B902001159DF /* Info.plist in Resources */,
+				22A745281998B9AD001159DF /* inverse.cu in Resources */,
+				22AF39DB1998AD1800258C2B /* Images.xcassets in Resources */,
+				22AF3A0A1998AE7F00258C2B /* Swatch XNU.xml in Resources */,
+				22A744AF1998B50F001159DF /* Swatch.maxhelp in Resources */,
+				22A745AC1998BDDC001159DF /* Swatch-XNU UI.xib in Resources */,
+				22A744C01998B6A8001159DF /* Admix.swatch in Resources */,
+				22A744BA1998B5DC001159DF /* simple-neuron in Resources */,
+				22AF3A051998AE7F00258C2B /* DSP.xnu in Resources */,
+				22A7451F1998B902001159DF /* NN_float.maxpat in Resources */,
+				22A745181998B902001159DF /* maxmspsdk.xcconfig in Resources */,
+				22AF3A061998AE7F00258C2B /* Foundation.xnu in Resources */,
+				22A745171998B902001159DF /* PkgInfo in Resources */,
+				22A7451B1998B902001159DF /* PkgInfo in Resources */,
+				22AF3A031998AE7F00258C2B /* Bundle.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A7452E1998BA34001159DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A745461998BB2C001159DF /* papa in Sources */,
+				22A745471998BB2C001159DF /* PkgInfo in Sources */,
+				22A745481998BB2C001159DF /* maxmspsdk.xcconfig in Sources */,
+				22A745491998BB2C001159DF /* oscar in Sources */,
+				22A7454A1998BB2C001159DF /* PkgInfo in Sources */,
+				22A7454B1998BB2C001159DF /* maxmspsdk.xcconfig in Sources */,
+				22A7454C1998BB2C001159DF /* NN_auto.maxpat in Sources */,
+				22A7454D1998BB2C001159DF /* NN_midi.maxpat in Sources */,
+				22A7454E1998BB2C001159DF /* NN_float.maxpat in Sources */,
+				22A7454F1998BB2C001159DF /* Brain Tester.maxpat in Sources */,
+				22A745501998BB2C001159DF /* Interface.dsp in Sources */,
+				22A745511998BB2C001159DF /* simple-neuron in Sources */,
+				22A745521998BB2C001159DF /* WaveShaping.metal in Sources */,
+				22A745531998BB2C001159DF /* Balance.metal in Sources */,
+				22A745541998BB2C001159DF /* ActionViewController.swift in Sources */,
+				22A745551998BB2C001159DF /* SwatchKernel.swift in Sources */,
+				22A745561998BB2C001159DF /* ActionGUI.swift in Sources */,
+				22A745571998BB2C001159DF /* ActionViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A745591998BBBA001159DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A7459A1998BC3C001159DF /* Swatch.maxhelp in Sources */,
+				22A7459B1998BC3C001159DF /* Max Implementation.xnu in Sources */,
+				22A7459C1998BC3C001159DF /* Foundation.xnu in Sources */,
+				22A7459D1998BC3C001159DF /* Other Implementation.xnu in Sources */,
+				22A7459E1998BC3C001159DF /* DSP.xnu in Sources */,
+				22A7459F1998BC3C001159DF /* Max Object Protocol.xnu in Sources */,
+				22A745A01998BC3C001159DF /* Modular Doxygen.xnu in Sources */,
+				22A745A11998BC3C001159DF /* Swift.xnu in Sources */,
+				22A745951998BC22001159DF /* UNIX.swift in Sources */,
+				22A745961998BC22001159DF /* Darwin.d in Sources */,
+				22A745971998BC22001159DF /* regs_x86_64.d in Sources */,
+				22A745981998BC22001159DF /* Signal.d in Sources */,
+				22A745991998BC22001159DF /* Socket.d in Sources */,
+				22A7456B1998BC0C001159DF /* papa.c in Sources */,
+				22A7456C1998BC0C001159DF /* oscar.c in Sources */,
+				22A7456D1998BC0C001159DF /* AAPLAppConfiguration.h in Sources */,
+				22A7456E1998BC0C001159DF /* AAPLAppConfiguration.m in Sources */,
+				22A7456F1998BC0C001159DF /* AAPLList.h in Sources */,
+				22A745701998BC0C001159DF /* AAPLList.m in Sources */,
+				22A745711998BC0C001159DF /* AAPLListColor+UI.h in Sources */,
+				22A745721998BC0C001159DF /* AAPLListColor+UI.m in Sources */,
+				22A745731998BC0C001159DF /* AAPLListItem.h in Sources */,
+				22A745741998BC0C001159DF /* AAPLListItem.m in Sources */,
+				22A745751998BC0C001159DF /* AAPLAddItemViewController.h in Sources */,
+				22A745761998BC0C001159DF /* AAPLAddItemViewController.m in Sources */,
+				22A745771998BC0C001159DF /* AAPLAppDelegate.h in Sources */,
+				22A745781998BC0C001159DF /* AAPLAppDelegate.m in Sources */,
+				22A745791998BC0C001159DF /* AAPLColorPaletteView.h in Sources */,
+				22A7457A1998BC0C001159DF /* AAPLColorPaletteView.m in Sources */,
+				22A7457B1998BC0C001159DF /* AAPLListItemView.h in Sources */,
+				22A7457C1998BC0C001159DF /* AAPLListItemView.m in Sources */,
+				22A7457D1998BC0C001159DF /* AAPLListTableView.h in Sources */,
+				22A7457E1998BC0C001159DF /* AAPLListTableView.m in Sources */,
+				22A7457F1998BC0C001159DF /* AAPLListViewController.h in Sources */,
+				22A745801998BC0C001159DF /* AAPLListViewController.m in Sources */,
+				22A745811998BC0C001159DF /* AAPLListWindowController.h in Sources */,
+				22A745821998BC0C001159DF /* AAPLListWindowController.m in Sources */,
+				22A745831998BC0C001159DF /* AAPLResizingTextField.h in Sources */,
+				22A745841998BC0C001159DF /* AAPLResizingTextField.m in Sources */,
+				22A745851998BC0C001159DF /* AAPLTableRowView.h in Sources */,
+				22A745861998BC0C001159DF /* AAPLTableRowView.m in Sources */,
+				22A745871998BC0C001159DF /* operations.h in Sources */,
+				22A745881998BC0C001159DF /* solve.h in Sources */,
+				22A745891998BC0C001159DF /* inverse.h in Sources */,
+				22A7458A1998BC0C001159DF /* inverse.cu in Sources */,
+				22A7458B1998BC0C001159DF /* solve.cu in Sources */,
+				22A7458C1998BC0C001159DF /* cuda_runtime_dynlink.cpp in Sources */,
+				22A7458D1998BC0C001159DF /* multithreading.cpp in Sources */,
+				22A7458E1998BC0C001159DF /* stopwatch.cpp in Sources */,
+				22A7458F1998BC0C001159DF /* rendercheck_d3d9.cpp in Sources */,
+				22A745901998BC0C001159DF /* rendercheck_d3d10.cpp in Sources */,
+				22A745911998BC0C001159DF /* rendercheck_d3d11.cpp in Sources */,
+				22A745921998BC0C001159DF /* VMGB.swift in Sources */,
+				22A745931998BC0C001159DF /* Semiosis.swift in Sources */,
+				22A745941998BC0C001159DF /* Admix.swatch in Sources */,
+				22A745631998BBBA001159DF /* LinguisticSignalSystem.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22AF39CA1998AD1800258C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A744FE1998B8DD001159DF /* AAPLAppConfiguration.m in Sources */,
+				22A744D51998B86E001159DF /* multithreading.cpp in Sources */,
+				22AF3A041998AE7F00258C2B /* Simple Neuron.c in Sources */,
+				22A744FF1998B8DD001159DF /* AAPLList.m in Sources */,
+				22A744EE1998B8AD001159DF /* AAPLColorPaletteView.m in Sources */,
+				22A744F01998B8AD001159DF /* AAPLListTableView.m in Sources */,
+				22A744B31998B549001159DF /* UNIX.swift in Sources */,
+				22A745231998B932001159DF /* papa.c in Sources */,
+				22A745241998B932001159DF /* oscar.c in Sources */,
+				22A744D81998B86E001159DF /* rendercheck_d3d10.cpp in Sources */,
+				22A744F41998B8AD001159DF /* AAPLTableRowView.m in Sources */,
+				22A744BD1998B613001159DF /* Balance.metal in Sources */,
+				22A744F11998B8AD001159DF /* AAPLListViewController.m in Sources */,
+				22A744A51998B3FE001159DF /* Socket.d in Sources */,
+				22AF39D71998AD1800258C2B /* main.m in Sources */,
+				22A744A31998B3FE001159DF /* regs_x86_64.d in Sources */,
+				22A744D71998B86E001159DF /* rendercheck_d3d9.cpp in Sources */,
+				22A744AA1998B4A2001159DF /* ActionGUI.swift in Sources */,
+				22A745001998B8DD001159DF /* AAPLListColor+UI.m in Sources */,
+				22A744C71998B72C001159DF /* VMGB.swift in Sources */,
+				22A745011998B8DD001159DF /* AAPLListItem.m in Sources */,
+				22A744EF1998B8AD001159DF /* AAPLListItemView.m in Sources */,
+				22A744A41998B3FE001159DF /* Signal.d in Sources */,
+				22A744A21998B3FE001159DF /* Darwin.d in Sources */,
+				22A744D91998B86E001159DF /* rendercheck_d3d11.cpp in Sources */,
+				22A744D61998B86E001159DF /* stopwatch.cpp in Sources */,
+				22A744C31998B6F6001159DF /* Semiosis.swift in Sources */,
+				22A744D41998B86E001159DF /* cuda_runtime_dynlink.cpp in Sources */,
+				22A744F31998B8AD001159DF /* AAPLResizingTextField.m in Sources */,
+				22A744B11998B533001159DF /* SwatchKernel.swift in Sources */,
+				22A744AB1998B4A2001159DF /* WaveShaping.metal in Sources */,
+				22A744ED1998B8AD001159DF /* AAPLAppDelegate.m in Sources */,
+				22A744EC1998B8AD001159DF /* AAPLAddItemViewController.m in Sources */,
+				22A744F21998B8AD001159DF /* AAPLListWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A7453E1998BA34001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A745311998BA34001159DF /* Neural Interface Sources */;
+			targetProxy = 22A7453D1998BA34001159DF /* PBXContainerItemProxy */;
+		};
+		22A745411998BA34001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A745311998BA34001159DF /* Neural Interface Sources */;
+			targetProxy = 22A745401998BA34001159DF /* PBXContainerItemProxy */;
+		};
+		22A745681998BBEB001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A745311998BA34001159DF /* Neural Interface Sources */;
+			targetProxy = 22A745671998BBEB001159DF /* PBXContainerItemProxy */;
+		};
+		22A7456A1998BBF3001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A7455D1998BBBA001159DF /* LinguisticSignalSystem */;
+			targetProxy = 22A745691998BBF3001159DF /* PBXContainerItemProxy */;
+		};
+		22A745A71998BC6B001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22AF39CD1998AD1800258C2B /* Swatch-XNU */;
+			targetProxy = 22A745A61998BC6B001159DF /* PBXContainerItemProxy */;
+		};
+		22A745A91998BC6B001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A745311998BA34001159DF /* Neural Interface Sources */;
+			targetProxy = 22A745A81998BC6B001159DF /* PBXContainerItemProxy */;
+		};
+		22A745AB1998BC6B001159DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A7455D1998BBBA001159DF /* LinguisticSignalSystem */;
+			targetProxy = 22A745AA1998BC6B001159DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22AF39DC1998AD1800258C2B /* Swatch-XNU UI.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22AF39DD1998AD1800258C2B /* Base */,
+				22A745AD1998BE4D001159DF /* en */,
+			);
+			name = "Swatch-XNU UI.xib";
+			path = "../Swatch-GNU";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A745431998BA35001159DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Neural Interface Sources/Neural_Interface_Sources.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Neural Interface Sources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22A745441998BA35001159DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Neural Interface Sources/Neural_Interface_Sources.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = "Neural Interface Sources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22A745651998BBBA001159DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LinguisticSignalSystem/Info.plist;
+				MODULE_NAME = hutton.dev.LinguisticSignalSystem;
+				MODULE_START = LinguisticSignalSystem_start;
+				MODULE_STOP = LinguisticSignalSystem_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		22A745661998BBBA001159DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = LinguisticSignalSystem/Info.plist;
+				MODULE_NAME = hutton.dev.LinguisticSignalSystem;
+				MODULE_START = LinguisticSignalSystem_start;
+				MODULE_STOP = LinguisticSignalSystem_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		22A745A41998BC64001159DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CUDA_ENABLE_VERBOSE_DEBUG = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22A745A51998BC64001159DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CUDA_ENABLE_VERBOSE_DEBUG = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22AF39DF1998AD1800258C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CUDA_ENABLE_VERBOSE_DEBUG = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22AF39E01998AD1800258C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				CUDA_ENABLE_VERBOSE_DEBUG = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22AF39E21998AD1800258C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = "Swatch-GNU/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "Swatch-XNU";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22AF39E31998AD1800258C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = "Swatch-GNU/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "Swatch-XNU";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A745421998BA35001159DF /* Build configuration list for PBXNativeTarget "Neural Interface Sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A745431998BA35001159DF /* Debug */,
+				22A745441998BA35001159DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22A745641998BBBA001159DF /* Build configuration list for PBXNativeTarget "LinguisticSignalSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A745651998BBBA001159DF /* Debug */,
+				22A745661998BBBA001159DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22A745A31998BC64001159DF /* Build configuration list for PBXAggregateTarget "Swatch-NN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A745A41998BC64001159DF /* Debug */,
+				22A745A51998BC64001159DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22AF39C91998AD1800258C2B /* Build configuration list for PBXProject "Swatch-XNU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22AF39DF1998AD1800258C2B /* Debug */,
+				22AF39E01998AD1800258C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22AF39E11998AD1800258C2B /* Build configuration list for PBXNativeTarget "Swatch-XNU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22AF39E21998AD1800258C2B /* Debug */,
+				22AF39E31998AD1800258C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22AF39C61998AD1800258C2B /* Project object */;
+}
